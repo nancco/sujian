@@ -9,65 +9,7 @@
   var TEXT_COLOR_KEY = 'sujian_text_color';
   var $ = function(id){ return document.getElementById(id); };
 
-  /* ---------- 字典数据 ---------- */
-  var dict = {
-    zh: {
-      title: '素笺 SuJian',
-      brand: '素笺', subBrand: 'SUJIAN',
-      newTitle: '新建 (Ctrl+N)', search: '搜索笔记… (Ctrl+F)',
-      exportTxt: '导出 TXT', exportDoc: '导出 DOC', exportJson: '备份 JSON', importJson: '导入 JSON', help: '说明书',
-      disclaimer: '纯本地运行，不收集、不上传任何数据。所有的网址会自动识别为超链接。',
-      toggleTitle: '收起/展开侧边栏 (Ctrl+B)',
-      save: '保存', saved: '已保存', saveTitle: '保存 (Ctrl+S)',
-      preview: '预览', edit: '编辑', previewTitle: '切换编辑/预览 (Ctrl+E)',
-      delete: '删除', theme: '背景', textColor: '字色',
-      editorPlaceholder: '在这里写下你的想法……',
-      emptyNote: '空白笔记', emptyPreview: '（空白）', charUnit: ' 字', noteUnit: ' 篇',
-      noMatch: '无匹配结果', noNotes: '暂无笔记',
-      delConfirm: '删除这篇笔记？不可恢复。',
-      helpTitle: '素笺使用说明书', gotIt: '我知道了',
-      h1Title: '📝 极简记事', h1Desc: '打开即写，纯文本无干扰。在左侧可以新建、搜索你的所有记录。',
-      h2Title: '💾 自动保存与本地隐私', h2Desc: '你的所有数据都在你当前设备的浏览器里，绝不联网上传。输入时后台会自动保存，也可随时点击右上角【保存】。',
-      h3Title: '🔗 超链接识别', h3Desc: '无论直接粘贴 http://、https:// 还是 www. 开头的网址，只要切换到【预览】，它们都会自动变成蓝色可点击的超链接。',
-      h4Title: '📦 备份与跨设备携带', h4Desc: '不要依赖浏览器永远不清理缓存。点击左下角的【备份 JSON】可以将全部笔记保存为一个文件。换手机或换电脑时，把文件发过去，点【导入 JSON】即可无缝还原。',
-      h5Title: '⌨️ 电脑端快捷键',
-      sSave: '保存', sNew: '新建', sSearch: '搜索', sPreview: '预览/编辑', sSidebar: '收起边栏', sEsc: '退出预览/清空',
-      importConfirm: '将导入 {n} 篇笔记，按 id 合并到现有笔记（更新的内容优先），不会覆盖其他笔记。确定？',
-      importSuccess: '导入完成，现有共 {n} 篇。',
-      importErrValid: '不是有效的备份文件', importErrEmpty: '没有可导入的笔记', importErrRead: '读取文件失败',
-      backupPrefix: '素笺备份_', importErrTitle: '导入失败：',
-      themeDark: '暗黑', themeLight: '亮白', themeGrid: '格子',
-      colorAuto: '自动', colorBlack: '纯黑', colorWhite: '纯白'
-    },
-    en: {
-      title: 'Sujian Notepad',
-      brand: 'Sujian', subBrand: 'NOTEPAD',
-      newTitle: 'New (Ctrl+N)', search: 'Search...',
-      exportTxt: 'Export TXT', exportDoc: 'Export DOC', exportJson: 'Backup JSON', importJson: 'Import JSON', help: 'Help',
-      disclaimer: '100% local & privacy-first. No data is collected or uploaded. URLs are auto-detected.',
-      toggleTitle: 'Toggle sidebar (Ctrl+B)',
-      save: 'Save', saved: 'Saved', saveTitle: 'Save (Ctrl+S)',
-      preview: 'Preview', edit: 'Edit', previewTitle: 'Toggle view (Ctrl+E)',
-      delete: 'Delete', theme: 'Theme', textColor: 'Text',
-      editorPlaceholder: 'Write something down...',
-      emptyNote: 'Empty note', emptyPreview: '(Empty)', charUnit: ' chars', noteUnit: ' notes',
-      noMatch: 'No results found', noNotes: 'No notes yet',
-      delConfirm: 'Delete this note? This cannot be undone.',
-      helpTitle: 'User Guide', gotIt: 'Got it',
-      h1Title: '📝 Minimalist Notepad', h1Desc: 'Just write. No distractions. Use the sidebar to create, search, and manage your notes.',
-      h2Title: '💾 Auto-save & Privacy', h2Desc: 'All data stays locally in your browser. Nothing is uploaded. Notes are auto-saved as you type, or you can manually click [Save].',
-      h3Title: '🔗 Auto-linking', h3Desc: 'Paste any URL starting with http://, https://, or www. Switch to [Preview] to see them turn into clickable blue links.',
-      h4Title: '📦 Backup & Portability', h4Desc: 'Browsers can clear cache. Click [Backup JSON] to save all notes into a single file. Send it to another device and click [Import JSON] to restore.',
-      h5Title: '⌨️ Shortcuts',
-      sSave: 'Save', sNew: 'New', sSearch: 'Search', sPreview: 'Preview/Edit', sSidebar: 'Toggle Sidebar', sEsc: 'Exit Preview',
-      importConfirm: 'Import {n} notes? Existing notes with the same ID will be updated if the imported version is newer.',
-      importSuccess: 'Import successful. Total notes: {n}',
-      importErrValid: 'Invalid backup file', importErrEmpty: 'No notes found to import', importErrRead: 'Failed to read file',
-      backupPrefix: 'Sujian_Backup_', importErrTitle: 'Import failed: ',
-      themeDark: 'Dark', themeLight: 'Light', themeGrid: 'Grid',
-      colorAuto: 'Auto', colorBlack: 'Black', colorWhite: 'White'
-    }
-  };
+  
 
   var currentLang = localStorage.getItem(LANG_KEY) || (navigator.language.startsWith('zh') ? 'zh' : 'en');
   var t = dict[currentLang];
