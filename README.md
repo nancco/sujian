@@ -1,7 +1,10 @@
 # 素笺 SuJian
 
 [English](#english) | [简体中文](#简体中文)
-##
+---
+
+👉 **[🌐 点击这里访问Click here to visit](https://nancco.github.io/sujian/)** 👈
+
 ---
 
 ## English
