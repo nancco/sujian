@@ -10,8 +10,6 @@
 
 ## English
 
-![截图](./screenshot/Chinese.png)
-
 A minimalist, pure frontend, single-file plain text diary & memo. 
 All data is saved locally in your browser's `localStorage`. No backend, no cloud, no tracking.
 
@@ -36,8 +34,6 @@ All data is saved locally in your browser's `localStorage`. No backend, no cloud
 
 ## 简体中文
 
-![截图](./screenshot/Chinese.png)
-
 一个极简的纯前端单文件纯文本日记本 / 备忘录。
 所有数据保存在浏览器的 `localStorage` 中。无后端、无云同步、不收集任何数据。
 
@@ -58,7 +54,6 @@ All data is saved locally in your browser's `localStorage`. No backend, no cloud
 - **数据安全**：清理浏览器缓存会导致数据丢失，**请养成备份 JSON 的习惯**。
 - **第三方链接**：图床/网盘可能随时失效或限速，重要照片和文件**务必在本地留底**。
 - **隐私**：请勿将私密照、密码等信息上传至公开图床。本工具不提供加密，纯明文本地存储。
-
 ---
 
 > **Tech Stack**: Vanilla HTML / CSS / JavaScript. Single-file architecture. No dependencies.
