@@ -10,7 +10,7 @@
 
 ## English
 
-![Screenshot](https://cdn.jsdelivr.net/gh/nancco/sujian@main/English.png)
+![截图](./screenshot/Chinese.png)
 
 A minimalist, pure frontend, single-file plain text diary & memo. 
 All data is saved locally in your browser's `localStorage`. No backend, no cloud, no tracking.
@@ -36,7 +36,7 @@ All data is saved locally in your browser's `localStorage`. No backend, no cloud
 
 ## 简体中文
 
-![Screenshot](https://cdn.jsdelivr.net/gh/nancco/sujian@main/Chinese.png)
+![截图](./screenshot/Chinese.png)
 
 一个极简的纯前端单文件纯文本日记本 / 备忘录。
 所有数据保存在浏览器的 `localStorage` 中。无后端、无云同步、不收集任何数据。
