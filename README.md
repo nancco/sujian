@@ -3,7 +3,8 @@
 [English](#english) | [简体中文](#简体中文)
 ---
 
-👉 **[🌐 点击这里访问Click here to visit](https://nancco.github.io/sujian/)** 👈（For foreign users accessing the webpage, please click on "EN" to switch to English）
+👉 **[在线预览 / Live Demo](https://你的用户名.github.io/你的仓库名/)** 👈
+*(For foreign users accessing the webpage, please click on "EN" to switch to English)*
 
 ---
 
