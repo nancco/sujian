@@ -58,5 +58,3 @@ All data is saved locally in your browser's `localStorage`. No backend, no cloud
 
 > **Tech Stack**: Vanilla HTML / CSS / JavaScript. Single-file architecture. No dependencies.
 > Built for minimalists who value data sovereignty.
->
-> ❤️By 卜雨小C/nancco
